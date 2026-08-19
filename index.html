@@ -22,12 +22,21 @@
             margin: 0 auto;
             padding: 16px;
         }
-        img{
-            width: 350px;
-            height: 200px;
+
+        article{
+            display: flex;
 
         }
-    </style>
+        img{
+            width: 600px;
+            height: 300px;
+
+        }
+
+        .artigo-autor{
+            font-weight: bold;
+        }
+            </style>
 </head>
 <body>
     <header>
@@ -38,10 +47,29 @@
     <main>
         
      <h2>Minha primeira notícia </h2>
-     <p>por: Ana Julia </p>
+     <p class="artigo-autor">por: Ana Julia </p>
      <p>O Colégio Rural Estadual de Pinhalzinho, está localizado em uma comunidade do interior de Rio Bonito do Iguaçú - Paraná. Entre os trabalhos desenvolvidos,
                  destaca-se os índices alcançados nos últimos anos com o IDEB, a Prova Paraná e também a aprovação dos alunos formados em diversos vestibulares do estado. </p>
      <img src="logo_escola-removebg-preview.png" alt="">
+     <button> ❤️<span>0</span></button>
+     <button>👍🏾 <span>0</span></button>
+     <article>
+
+        <img src="" alt="">
+        
+        <div>
+            <h2>Meu segundo post</h2>
+          <p class="artigo-autor">por: Ana Julia</p>
+          <p>Aqui vou dar dicas de estudos para quem esta se preparando para vestibular e enem</p>
+          <button>❤️<span>0</span></button>
+          <button>👍🏾<span>0</span></button>
+        </div>
+    
+    </article>
     </main>
 </body>
+ <script>
+    const botões = document.querySelectorAll("button");
+    botões.forEach(function(botão))
+ </script>
 </html>
